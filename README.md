@@ -1,6 +1,14 @@
 ## Implementation Computers vision and Image processing algorithms
 # TODO
 # add description...
+
+** Python dependencies ** 
+<div>
+<ul>
+<li>``` OpenCV 4.4 ```</li>
+</ul>
+</div>
+
 <div>
 <h4>Data set</h4>
 <ul>
