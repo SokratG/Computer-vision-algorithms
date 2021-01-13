@@ -5,7 +5,7 @@
 <h4>Data set</h4>
 <ul>
  <li><a href="http://programmingcomputervision.com">Book data sets</a></li>
- <li><a href="www.robots.ox.ac.uk/~vgg/data/">Oxford data sets</a></li>
+ <li><a href="https://www.robots.ox.ac.uk/~vgg/data/">Oxford data sets</a></li>
  <li><a href="https://archive.org/details/ukbench">UKBench Datasets</a></li>
  <li><a href="https://idiap.ch/resource/gestures">Idiap Gesture Datasets</a></li>
 </ul>
