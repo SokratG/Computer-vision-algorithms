@@ -2,48 +2,19 @@
 # TODO
 # add description...
 
-**Package dependencies:** 
+**Python package dependencies:** 
 
-<svg width="125" height="50">
-  <rect x="0" y="0" width="125" height="50"  fill="gray" rx="15" fill-opacity="0.6"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Numpy 1.19</text>    
-</svg>
-<br>
-<svg width="175" height="50">
-  <rect x="0" y="0" width="175" height="50"  fill="gray" rx="15" fill-opacity="0.6"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">OpenCV-python 4.4</text>    
-</svg>
-<br>
-<svg width="225" height="50">
-  <rect x="0" y="0" width="225" height="50"  fill="gray" rx="15" fill-opacity="0.6"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">OpenCV-contrib-python 4.4</text>    
-</svg>
-<br>
-<svg width="125" height="50">
-  <rect x="0" y="0" width="125" height="50"  fill="gray" rx="15" fill-opacity="0.6"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">SciPy 1.5.4</text>    
-</svg>
-<br>
-<svg width="125" height="50">
-  <rect x="0" y="0" width="125" height="50"  fill="gray" rx="15" fill-opacity="0.6"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">libSVM 3.23</text>    
-</svg>
-<br>
-<svg width="150" height="50">
-  <rect x="0" y="0" width="150" height="50"  fill="gray" rx="15" fill-opacity="0.6"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">scikit-image 0.18</text>    
-</svg>
-<br>
-<svg width="125" height="50">
-  <rect x="0" y="0" width="125" height="50"  fill="gray" rx="15" fill-opacity="0.6"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">matplotlib 3.3</text>    
-</svg>
-<br>
-<svg width="125" height="50">
-  <rect x="0" y="0" width="125" height="50"  fill="gray" rx="15" fill-opacity="0.6"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">networkx 2.5</text>    
-</svg>
-<br>
+<ul>
+<li>Numpy 1.19</li>
+<li>OpenCV-python 4.4</li>
+<li>OpenCV-contrib-python 4.4</li>
+<li>SciPy 1.5.4</li>
+<li>libSVM 3.23</li>
+<li>scikit-image 0.18</li>
+<li>matplotlib 3.3</li>
+<li>networkx 2.5</li>
+</ul>
+
 
 <div>
 <h4>Data set</h4>
