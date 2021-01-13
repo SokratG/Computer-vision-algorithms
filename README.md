@@ -14,7 +14,7 @@
 <div>
 <h4>***Reference***</h4>
 <ol>
-    <li>Gonzalez, R.C. and Woods, R.E. [2008] Digital Image Processing, 3th ed., Prentice Hall, Upper Saddle River, NJ <a href="https://imageprocessingplace.com">book site</a></li>
-    <li>Solem J.E. Programming Computer Vision with Python: Tools and algorithms for analyzing images. - "O'Reilly Media, Inc", 2012 <a href="https://programmingcomputervision.com">book site</a></li>
+    <li>Gonzalez, R.C. and Woods, R.E. [2008] Digital Image Processing, 3th ed., Prentice Hall, Upper Saddle River, NJ <a href="http://imageprocessingplace.com">book site</a></li>
+    <li>Solem J.E. Programming Computer Vision with Python: Tools and algorithms for analyzing images. - "O'Reilly Media, Inc", 2012 <a href="http://programmingcomputervision.com">book site</a></li>
 </ol>
 </div>
