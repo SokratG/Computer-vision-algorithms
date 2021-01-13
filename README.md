@@ -1,13 +1,13 @@
-##Implementation Computers vision and Image processing algorithms
+## Implementation Computers vision and Image processing algorithms
 # TODO
 # add description...
 <div>
 <h4>Data set</h4>
 <ul>
- <a href="programmingcomputervision.com">book data sets</a>
- <a href="https://www.robots.ox.ac.uk/~vgg/data/">Oxford data sets</a>
- <a href="archive.org/details/ukbench">UKBench Datasets</a>
- <a href="www.idiap.ch/resource/gestures">Idiap Gesture Datasets</a>
+ <li><a href="programmingcomputervision.com">book data sets</a></li>
+ <li><a href="https://www.robots.ox.ac.uk/~vgg/data/">Oxford data sets</a></li>
+ <li><a href="archive.org/details/ukbench">UKBench Datasets</a></li>
+ <li><a href="www.idiap.ch/resource/gestures">Idiap Gesture Datasets</a></li>
 </ul>
 </div>
 
