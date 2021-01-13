@@ -1,0 +1,20 @@
+##Implementation Computers vision and Image processing algorithms
+# TODO
+# add description...
+<div>
+<h4>Data set</h4>
+<ul>
+ <a href="programmingcomputervision.com">book data sets</a>
+ <a href="https://www.robots.ox.ac.uk/~vgg/data/">Oxford data sets</a>
+ <a href="archive.org/details/ukbench">UKBench Datasets</a>
+ <a href="www.idiap.ch/resource/gestures">Idiap Gesture Datasets</a>
+</ul>
+</div>
+
+<div>
+<h4>***Reference***</h4>
+<ol>
+    <li>Gonzalez, R.C. and Woods, R.E. [2008] Digital Image Processing, 3th ed., Prentice Hall, Upper Saddle River, NJ <a href="www.imageprocessingplace.com">book site</a></li>
+    <li>Solem J.E. Programming Computer Vision with Python: Tools and algorithms for analyzing images. - "O'Reilly Media, Inc", 2012 <a href="programmingcomputervision.com">book site</a></li>
+</ol>
+</div>
