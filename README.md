@@ -1,4 +1,4 @@
-# Collection of Computers vision and Image processing algorithms
+# Implementation of Computers vision and Image processing algorithms
 
 ## camera module:
 * find camera matrix
