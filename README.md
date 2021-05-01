@@ -40,6 +40,9 @@
 * find Epipole matrix
 * find Triangulation points
 * find Fundamental normalized matrix
+## DFT module:
+* Discrete Fourier transformation
+* Inverse Discrete Fourier transformation
 ## computer vision machine learning(CVml) module:
 * Principal Component Analisys algorithm
 * Hierarchical Clustering
