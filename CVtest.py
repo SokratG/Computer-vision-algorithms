@@ -772,3 +772,12 @@ def test_cartoon_():
     cv2.imshow('win', rimg)
     cv2.waitKey(0)
     return
+    
+def test_dft_():
+    import dft
+    img_str = "imgs/messi.jpeg"
+    img = cv2.imread(img_str, cv2.IMREAD_GRAYSCALE)
+    res = dft.DFT_img(img, True)
+    
+    cv2.imwrite('res.png', res)
+    return
