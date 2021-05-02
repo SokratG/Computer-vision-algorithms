@@ -147,3 +147,31 @@ def hog_descs(img, visualisize=False, px_per_cell=(10, 10), cells_per_block=(5, 
         return hogdesc
 
     return None
+    
+# ---------------------------------- Compute Hessian Image ----------------------------------
+def Hessian(img, sigma=0):
+
+    imgX, imgY = np.zeros(img.shape, dtype=np.float32), np.zeros(img.shape, dtype=np.float32)
+    # imgYX and imgXY are equal in this case?
+    imgXX, imgYY = np.zeros(img.shape, dtype=np.float32), np.zeros(img.shape, dtype=np.float32)
+    imgXY, imgYX = np.zeros(img.shape, dtype=np.float32), np.zeros(img.shape, dtype=np.float32) 
+
+    if sigma > 0: # use gaussian kernel
+        # first derivation
+        filters.gaussian_filter(img, (sigma, sigma), (0,1), imgX)
+        filters.gaussian_filter(img, (sigma, sigma), (1,0), imgY)      
+
+        # second derivation
+        filters.gaussian_filter(imgX, (sigma, sigma), (0,1), imgXX)
+        filters.gaussian_filter(imgX, (sigma, sigma), (1,0), imgXY)
+        filters.gaussian_filter(imgY, (sigma, sigma), (0,1), imgYX)
+        filters.gaussian_filter(imgY, (sigma, sigma), (1,0), imgYY)
+    else:
+        # first derivation
+        imgX, imgY = np.gradient(img)
+        # second derivation
+        imgXX, imgXY = np.gradient(imgX)
+        imgYX, imgYY = np.gradient(imgY)
+    
+
+    return (imgXX, imgYY, imgXY)

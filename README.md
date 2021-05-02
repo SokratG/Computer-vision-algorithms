@@ -13,6 +13,7 @@
 * find Harris corner
 * find descriptors from Harris corner
 * find matches features
+* find Hessian image
 ## histogram module:
 * Linear stretching histogram
 * Histogram equalization
@@ -33,6 +34,7 @@
 * Bilateral filter
 * Non-local means filter
 * Rudin–Osher–Fatemi Total Variation denoising
+* Laplace sharpening
 ## transformation module:
 * find Homography matrix
 * find Homography affine matrix
