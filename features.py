@@ -19,6 +19,8 @@ def corner_detector(img, sigma=3, min_dist=10, threshold=0.1):
     Wxy = filters.gaussian_filter(imgX*imgY, sigma)
     Wyy = filters.gaussian_filter(imgY*imgY, sigma)
 
+	# Compute the response of the detector at each pixel
+    # Noble's 1998 - "DESCRIPTIONS OF IMAGE SURFACES"
     Wdet = Wxx * Wyy - Wxy**2
     Wtrace = Wxx + Wyy
     W = np.divide(Wdet, Wtrace, where=Wtrace!=0) # out=np.zeros_like(Wdet)

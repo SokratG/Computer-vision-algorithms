@@ -164,3 +164,20 @@ def ROF_denose(img, U, TV_weight, tolerance=0.1, tau=0.125):
 
     # return denoising image and texture residual
     return U_, img - U_
+    
+    
+# ---------------------------------- Laplacian ----------------------------------
+def customLaplaceSharpening(img, sigma=2):
+    ksize = 2 * sigma + 1 
+    
+    # remove noise
+    img_blur = cv2.GaussianBlur(img, (ksize, ksize), sigma)
+
+    laplace_flt = np.array([[1, 1, 1], [1, -8, 1], [1, 1, 1]])
+
+    res_l = cv2.filter2D(img_blur, -1, laplace_flt)
+    
+    res = np.uint8(cv2.subtract(img, res_l))
+
+    return res
+    

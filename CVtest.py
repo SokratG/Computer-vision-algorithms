@@ -781,3 +781,14 @@ def test_dft_():
     
     cv2.imwrite('res.png', res)
     return
+    
+def test_laplacian_():
+    import smooth
+    img_str = "imgs/moon.png"
+    img = cv2.imread(img_str, cv2.IMREAD_GRAYSCALE)
+    res = smooth.customLaplaceSharpening(img)
+    cv2.imshow('win', res)
+    cv2.imshow('win2', img)
+    cv2.waitKey(0)
+    return
+    
