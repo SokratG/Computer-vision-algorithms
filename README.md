@@ -47,6 +47,7 @@
 * Inverse Discrete Fourier transformation
 ## optical flow module:
 * Horn-Schunck algorithm
+* Lucas-Kanade algorithm
 ## computer vision machine learning(CVml) module:
 * Principal Component Analisys algorithm
 * Hierarchical Clustering

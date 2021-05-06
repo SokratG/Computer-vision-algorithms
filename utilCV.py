@@ -44,6 +44,7 @@ def show_img(img):
     plt.show()
     return
 
+
 # ---------------------------------- show color image matplotlib ----------------------------------
 def show_img_color(img):
     plt.imshow(img)
