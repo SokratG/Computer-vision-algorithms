@@ -801,3 +801,42 @@ def test_LoG_():
     cv2.waitKey(0)
     return  
     
+
+
+def optflow_HS():
+    import opticflow
+    import flow_vis # https://github.com/tomrunia/OpticalFlow_Visualization
+    img_str = "imgs/car_input.gif" # resource from - https://people.csail.mit.edu/celiu/OpticalFlow/
+    cap = cv2.VideoCapture(img_str)
+    img1, img2 = None, None
+    if (cap.isOpened()):
+        ret, org_img1 = cap.read()
+        ret, org_img2 = cap.read()
+    cap.release()
+    rgb_img = cv2.cvtColor(org_img1, cv2.COLOR_BGR2RGB)
+    img1 = cv2.cvtColor(org_img1, cv2.COLOR_BGR2GRAY)
+    img2 = cv2.cvtColor(org_img2, cv2.COLOR_BGR2GRAY)
+    
+    flow_u, flow_v = opticflow.Horn_Schunck_opt_flow(img1, img2)
+    flow_h , flow_w , _ = org_img1.shape
+    flow_uv = np.zeros((flow_h, flow_w, 2))
+    flow_uv[:, :, 0] = flow_u
+    flow_uv[:, :, 1] = flow_v
+
+    # visualize offsets in color space
+    flow_color = flow_vis.flow_to_color(flow_uv, convert_to_bgr=False)
+    utilCV.show_compare_color([rgb_img, flow_color], ['original',  'flow'], 1, 2)
+
+    '''
+    # Encoding: convert the algorithm's output into Polar coordinates
+    hsv = np.zeros_like(org_img1, dtype=np.uint8)
+    mag, ang = cv2.cartToPolar(flow_u, flow_v)
+    hsv[..., 1] = 255
+    hsv[..., 0] = ang * 180 / np.pi / 2
+    hsv[..., 2] = cv2.normalize(mag, None, 0, 255, cv2.NORM_MINMAX)
+
+    # Convert HSV image into BGR for demo
+    rgb = cv2.cvtColor(hsv, cv2.COLOR_HSV2RGB)
+    utilCV.show_compare_color([rgb_img, rgb], ['original',  'flow'], 1, 2)
+    '''
+    return

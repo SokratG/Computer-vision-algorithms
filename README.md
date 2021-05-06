@@ -45,6 +45,8 @@
 ## DFT module:
 * Discrete Fourier transformation
 * Inverse Discrete Fourier transformation
+## optical flow module:
+* Horn-Schunck algorithm
 ## computer vision machine learning(CVml) module:
 * Principal Component Analisys algorithm
 * Hierarchical Clustering
@@ -82,5 +84,6 @@
 <ol>
     <li>Gonzalez, R.C. and Woods, R.E. [2008] Digital Image Processing, 3th ed., Prentice Hall, Upper Saddle River, NJ <a href="http://imageprocessingplace.com">book site</a></li>
     <li>Solem J.E. Programming Computer Vision with Python: Tools and algorithms for analyzing images. - "O'Reilly Media, Inc", 2012 <a href="http://programmingcomputervision.com">book site</a></li>
+    <li>Klette, Reinhard. Concise computer vision. Springer, London, 2014. <a href="https://ccv.wordpress.fos.auckland.ac.nz">book site</a></li>
 </ol>
 </div>

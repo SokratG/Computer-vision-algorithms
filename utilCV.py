@@ -44,6 +44,13 @@ def show_img(img):
     plt.show()
     return
 
+# ---------------------------------- show color image matplotlib ----------------------------------
+def show_img_color(img):
+    plt.imshow(img)
+    plt.title("result image")
+    plt.show()
+    return
+
 # ---------------------------------- show images matplotlib ----------------------------------
 def show_compare(images, titles):
     if (len(images) > 6):
@@ -56,6 +63,19 @@ def show_compare(images, titles):
     plt.show()
     return
 
+# ---------------------------------- show images color matplotlib ----------------------------------
+def show_compare_color(images, titles, h=1, w=1):
+    if (len(images) > 6):
+        return
+    size = len(images)
+    for i in range(size):
+        plt.subplot(h, w, i + 1)
+        plt.title(titles[i]) 
+        plt.imshow(images[i])
+    plt.axis('off')
+    plt.show()
+    return
+    
 
 # ---------------------------------- show images matplotlib ----------------------------------
 def show_compare_r(images, titles, h=1, w=1):
