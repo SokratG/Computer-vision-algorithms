@@ -170,3 +170,28 @@ def customCanny(img, weak_pixel, strong_pixel=255, low_threshold=None, high_thre
     result = customHysteresis(ThreshImage, weak_pixel, strong_pixel)
     
     return result
+    
+    
+# -------------------------- LoG(Laplacian of Gaussian) edge detection ----------------------------
+def kernel_Laplacian_of_Gaussian(sigma):
+    # https://homepages.inf.ed.ac.uk/rbf/HIPR2/log.htm
+    # second derivity of gaussian kernel
+    ksize = np.ceil(6*np.sqrt(2)*sigma) # rec. kernel size = ceil(6*sqrt(2)*σ)xceil(6*sqrt(2)*σ)
+    size = int(ksize) // 2
+    x, y = np.mgrid[-size:size+1, -size:size+1]
+    exp_ = np.exp(-(x ** 2 + y ** 2) / (2. * (sigma ** 2)))
+    coef_ = 1/(np.pi * sigma**4) * ((x**2 + y**2 - 2 * sigma**2) / sigma**2)
+    kernel = coef_ * exp_
+    return kernel
+
+
+def LoG_edge(img, sigma=1):
+    import smooth
+    assert(len(img.shape) == 2) # grayscale
+
+    kernel = kernel_Laplacian_of_Gaussian(sigma)
+    
+    res_img = cv2.filter2D(img, -1, kernel)
+
+    return res_img
+

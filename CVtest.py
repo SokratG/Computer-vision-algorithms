@@ -791,4 +791,13 @@ def test_laplacian_():
     cv2.imshow('win2', img)
     cv2.waitKey(0)
     return
+  
+def test_LoG_():
+    import edge_detection
+    img_str = "imgs/Set1Seq1.bmp"
+    img = cv2.imread(img_str, cv2.IMREAD_GRAYSCALE)
+    res = edge_detection.LoG_edge(img)
+    cv2.imshow('win', res)
+    cv2.waitKey(0)
+    return  
     
