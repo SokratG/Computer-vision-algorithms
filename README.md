@@ -66,6 +66,7 @@
 <li>scikit-image 0.18</li>
 <li>matplotlib 3.3</li>
 <li>networkx 2.5</li>
+<li>flow_vis 0.1</li>
 </ul>
 
 
